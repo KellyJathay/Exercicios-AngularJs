@@ -1,0 +1,35 @@
+var get = function (url, callback) {
+	var xhr = new XMLHttpRequest();
+	xhr.onereadystatechange = function () {
+		if (xhr.readyState === 4) {
+			callback(xhr.responseText, xhr.status);
+		}
+	};
+	xhr.open('GET', url);
+	xhr.send(null);
+};
+
+get("http://localhost:3412/contatos", function (data) {
+	document.getElementById("ajax").innerHTML = data;
+});
+
+$http
+
+-> Serviço do Angular que permite a realizações e requisições utilizando XMLHttpRequest ou via JSONP:
+
+- get (url, config)
+- post (url, config)
+- put (url, config)
+- delete (url, config)
+- head (url, config)
+- jsonp (url, config)
+
+
+SOP (Same-Origin Policy)
+- Política de restrição de segurança.
+
+JSONP (JSON with padding)
+- Estratégia para bular o mecanismo de proteção dos navegadores.
+
+CORS (Cross-Origin Resource Sharing)
+- Permissão para acessar recursos externos por meio de cabeçalhos HTTP adicionais.

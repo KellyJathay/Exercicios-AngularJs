@@ -1,0 +1,26 @@
+Tipos de serviços:
+
+1- factory:
+	
+2- service:
+
+3- value:
+
+4- provider:
+
+5-config:
+
+
+Organizando o Projeto:
+
+Inline Style :
+	- tudo no mesmo arquivo.
+
+Stereotyped Style :
+	- os componentes do mesmo tipo juntos
+
+Specific Style :
+	- um arquivo para cada componente
+
+Domain Style :
+ 	- agrupando os arquivos por domínio
